@@ -87,6 +87,47 @@ Regole da rispettare sempre:
 - Usare esempi concreti: nome, età, voti, prezzi — non `x`, `foo`, `variabile1`
 - Non commentare MAI ogni singola riga: i commenti devono aggiungere valore
 
+### Ritmo di spiegazione — regola fondamentale
+
+Le lezioni devono andare **lentamente e per gradi**. Non dare mai per scontato nessun passaggio.
+Linee guida concrete:
+
+**Prima di introdurre un costrutto nuovo, spiega perché quello vecchio non basta.**
+Non scrivere "ecco il while". Scrivi prima "il for non funziona quando non sai quante volte
+ripetere — ed è per questo che esiste il while."
+
+**Ogni concetto nuovo ha un blocco dedicato, anche se sembra ovvio.**
+Il loop infinito, la differenza tra chiedere fuori e dentro al while, il fatto che
+la condizione si controlla prima di entrare: queste cose sembrano ovvie a chi le conosce,
+ma non lo sono per chi le vede per la prima volta. Ognuna merita il suo blocco.
+
+**Quando mostri un pattern, numera i passi.**
+Esempio per "input in loop":
+```
+# passo 1: chiedo FUORI dal while
+# passo 2: while la risposta è sbagliata:
+# passo 3:     avvisa l'utente
+# passo 4:     chiedi di nuovo DENTRO al while
+```
+Questo aiuta lo studente a replicare il pattern in autonomia.
+
+**Se un esempio fa più cose insieme, percorrilo riga per riga nei commenti.**
+Esempio: per un while con contatore, aggiungi un commento che simula l'esecuzione:
+```
+# giro 1: numero vale 0 → 0 < 3 è True → stampa 0 → numero diventa 1
+# giro 2: numero vale 1 → 1 < 3 è True → stampa 1 → numero diventa 2
+# giro 3: numero vale 2 → 2 < 3 è True → stampa 2 → numero diventa 3
+# giro 4: numero vale 3 → 3 < 3 è False → esce
+```
+
+**I pericoli vanno spiegati prima della soluzione, non dopo.**
+Non scrivere il codice corretto e poi aggiungere "attenzione al loop infinito".
+Mostra prima cosa succede se si sbaglia, poi come evitarlo.
+
+**Pattern simili ma diversi vanno in blocchi separati.**
+Esempio: "validare un input" e "uscire con una parola di stop" usano entrambi
+il while con input, ma la logica è diversa. Non metterli nello stesso blocco.
+
 ---
 
 ## Come lavorare sul piano del corso

@@ -43,8 +43,8 @@ Lo studente sa usare `for` e `while` per ripetere azioni, sa costruire contatori
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
 | 7–8 | `for`, `range`, iterazione su stringhe e liste semplici | `05-for.py`, `06-for-verifica.py`, `L4-for-range-liste.py` |
-| 9–10 | `while`, condizione di stop, contatori, input in loop | `04-while-for.py`, `07-while.py` |
-| 11–12 | Esercizi misti `for`/`while` + scheda verifica + mini-progetto (tabellina, somma) | `08-esercizi.py` |
+| 9–10 | `while`, condizione di stop, contatori, input in loop | `04-while-for.py`, `07-while.py`, `L5-while-contatori.py` |
+| 11–12 | Esercizi misti `for`/`while` + scheda verifica + mini-progetto (tabellina, somma) | `08-esercizi.py`, `L6-ripasso-cicli-progetto.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — analogia concreta per introdurre il concetto
