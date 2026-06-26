@@ -67,10 +67,10 @@ Lo studente sa organizzare il codice in funzioni riutilizzabili, gestire liste e
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 13–14 | Liste: creare, `append`, `remove`, `sort`, `reverse`, scorrere con `for` | `09-liste.py` |
-| 15–16 | Funzioni: `def`, parametri, `return` — perché separare il codice | `010-funzioni.py`, `012-funz+while.py` |
-| 17–18 | Dizionari: chiave/valore, accesso, aggiornamento, lista di dizionari | `013-dizionari.py` |
-| 19–20 | Ripasso generale + progetto intermedio (es. gestione lista della spesa) | `011-ripasso.py` |
+| 13–14 | Liste: creare, `append`, `remove`, `sort`, `reverse`, scorrere con `for` | `09-liste.py`, `L7-liste.py` |
+| 15–16 | Funzioni: `def`, parametri, `return` — perché separare il codice | `010-funzioni.py`, `012-funz+while.py`, `L8-funzioni.py` |
+| 17–18 | Dizionari: chiave/valore, accesso, aggiornamento, lista di dizionari | `013-dizionari.py`, `L9-dizionari.py` |
+| 19–20 | Ripasso generale + progetto intermedio (es. gestione lista della spesa) | `011-ripasso.py`, `L10-ripasso-progetto.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — spiegazione con schema visivo alla lavagna
@@ -94,8 +94,8 @@ Lo studente sa usare la libreria `turtle` per disegnare forme, gestire il movime
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 21–22 | Comandi base `turtle`, disegnare forme con `for`, colori, velocità | `015-turtle.py`, `014-geometria.py` |
-| 23–24 | Controllo con tasti (`onkey`), movimento fluido (`penup`/`pendown`), disegno libero | `016-controlla-turtle.py` |
+| 21–22 | Comandi base `turtle`, disegnare forme con `for`, colori, velocità | `015-turtle.py`, `014-geometria.py`, `L11-turtle-basi.py` |
+| 23–24 | Controllo con tasti (`onkey`), movimento fluido (`penup`/`pendown`), disegno libero | `016-controlla-turtle.py`, `L12-turtle-tasti.py` |
 
 ### Struttura tipo di una lezione
 - 15 min — demo live del risultato finale (mostrare prima cosa si costruirà)
@@ -119,8 +119,8 @@ Lo studente sa usare `time` e `random`, gestire booleani come stato del programm
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 25–26 | Libreria `time`, cronometro, gioco reazione — `ontimer`, booleani come stato | `019-tempo.py`, `020-reazione.py`, `021-cronometro.py` |
-| 27–28 | Collisioni con `distance()`, punteggio, `random`, primo gioco completo | `018-collisioni.py`, `022-test-scrittura.py`, `023-fpsaim.py` |
+| 25–26 | Libreria `time`, cronometro, gioco reazione — `ontimer`, booleani come stato | `019-tempo.py`, `020-reazione.py`, `021-cronometro.py`, `L13-tempo-ontimer-stato.py` |
+| 27–28 | Collisioni con `distance()`, punteggio, `random`, primo gioco completo | `018-collisioni.py`, `022-test-scrittura.py`, `023-fpsaim.py`, `L14-collisioni-punteggio-gioco.py` |
 
 ### Struttura tipo di una lezione
 - 10 min — presentazione del gioco che si costruirà
@@ -144,9 +144,9 @@ Lo studente conosce le basi di Pygame, capisce la differenza tra il game loop e 
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 29–30 | Pygame: schermata, game loop (`while`), `draw.rect`/`circle`, movimento con tasti | `025-pygame.py`, `026-comandi-pygame.py` |
-| 31–32 | Collisioni manuali, velocità, colori dinamici, clock e FPS | `027-acchiappa.py`, `028-semaforo.py`, `029-ascensore.py` |
-| 33 | Progetto finale libero: ogni studente porta a termine un gioco scelto | `024-dado.py` (esempio) |
+| 29–30 | Pygame: schermata, game loop (`while`), `draw.rect`/`circle`, movimento con tasti | `025-pygame.py`, `026-comandi-pygame.py`, `L15-pygame-basi.py` |
+| 31–32 | Collisioni manuali, velocità, colori dinamici, clock e FPS | `027-acchiappa.py`, `028-semaforo.py`, `029-ascensore.py`, `L16-pygame-clock-collisioni.py` |
+| 33 | Progetto finale libero: ogni studente porta a termine un gioco scelto | `024-dado.py` (esempio), `L17-progetto-finale.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — confronto esplicito con Turtle (schema alla lavagna)
