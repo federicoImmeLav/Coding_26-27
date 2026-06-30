@@ -128,6 +128,29 @@ Mostra prima cosa succede se si sbaglia, poi come evitarlo.
 Esempio: "validare un input" e "uscire con una parola di stop" usano entrambi
 il while con input, ma la logica è diversa. Non metterli nello stesso blocco.
 
+**Per i concetti più complessi, scomponi la spiegazione in tre livelli nei commenti.**
+Prima mostra il caso minimo (un singolo elemento), poi come aggiungerlo a una struttura,
+poi come farlo dentro a un ciclo. Esempio per "lista di dizionari costruita dall'utente":
+```
+# --- come funziona un singolo studente ---
+# s = {"nome": nome, "voto": voto}
+# puoi leggere s["nome"] e s["voto"]
+
+# --- come aggiungere quel dizionario alla lista ---
+# classe = []
+# classe.append(s)
+# al secondo giro append aggiunge il secondo dizionario in fondo
+
+# --- come farlo N volte con il for ---
+# passo 1: lista vuota FUORI dal for
+# passo 2: for i in range(quanti):
+# passo 3:     chiedi i dati
+# passo 4:     append({"chiave": valore})   ← dizionario creato al volo
+# passo 5: usa la lista completa FUORI, dopo il for
+```
+Questo vale ogni volta che si introduce un pattern che combina strutture dati e cicli
+per la prima volta: lista di dizionari, lista di oggetti, dizionario costruito in loop, ecc.
+
 ---
 
 ## Come lavorare sul piano del corso
