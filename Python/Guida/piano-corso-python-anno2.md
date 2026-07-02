@@ -31,6 +31,32 @@ Lo studente recupera la sicurezza con i concetti dell'anno precedente (variabili
 
 ---
 
+## Unità 1-bis — Gestione file e filesystem
+**Settimana 3-bis · 4 ore**
+
+### Obiettivo
+Lo studente sa navigare il filesystem con `pathlib`, verificare l'esistenza di file e cartelle, e copiare/spostare/rinominare file con `shutil` — strumenti immediatamente utili per organizzare i file dei progetti Pygame che arriveranno nelle settimane successive.
+
+### Contenuti
+| Settimana | Argomento | File di riferimento |
+|-----------|-----------|---------------------|
+| 3-bis (parte 1) | `pathlib`: percorsi assoluti vs relativi, `Path.home()`, operatore `/`, `.parent`, `.exists()`, `.is_file()`, `.is_dir()`, `iterdir()`, `mkdir()` | `L21-pathlib-filesystem.py` |
+| 3-bis (parte 2) | `shutil`: `copy()`, `move()`, rinominare; pericoli di `os.remove()` e `shutil.rmtree()`; mini-progetto: script che ordina una cartella per estensione | `L22-shutil-copia-sposta.py` |
+| 3-bis (parte 3) | Pratica guidata su cartella pre-predisposta: `sorted()` con `key=`, lambda, ordinamento per nome/dimensione/data/estensione, raggruppamento con dizionario | `L23-ordinamento-file.py` + `materiale_L23/` |
+
+### Struttura tipo di una lezione
+- 10 min — il "dolore" concreto (perché `open("foto.jpg")` a volte fallisce; la cartella Download disordinata)
+- 40 min — coding insieme con esempi eseguibili e output visibile
+- 30 min — esercizi autonomi
+
+### Note didattiche
+- Introdurre `pathlib` partendo dal problema reale: `open("file.txt")` funziona a volte sì a volte no. Lo studente deve sentire il dolore prima di vedere la soluzione.
+- Mostrare il pericolo di `shutil.rmtree()` e `os.remove()` PRIMA della sintassi corretta, non dopo: la cancellazione è irreversibile e non c'è cestino.
+- Il mini-progetto "organizza cartella per estensione" è un esempio forte di utilità pratica immediata: porta gli studenti a capire che Python fa cose reali, non solo esercizi astratti.
+- Questi strumenti tornano utili in Unità 4–5 (gestione path delle immagini Pygame, salvataggio file di dati).
+
+---
+
 ## Unità 2 — Pygame avanzato
 **Settimane 4–10 · 14 ore**
 
@@ -40,9 +66,9 @@ Lo studente sa costruire un gioco Pygame più completo: con immagini (sprite), s
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 4–5 | Ripasso Pygame base (game loop, `draw.rect`/`circle`, tasti) + caricare e mostrare immagini (`image.load`), `Rect` per le collisioni | nuovo file `L21-pygame-immagini.py` |
-| 6–7 | Suoni ed effetti (`mixer`), testo a schermo (`font`), punteggio persistente durante la partita | nuovo file `L22-pygame-suoni-testo.py` |
-| 8–9 | Stati di gioco: menu iniziale, partita, schermata di game over — gestiti con variabili di stato e `if` | nuovo file `L23-pygame-stati-menu.py` |
+| 4–5 | Ripasso Pygame base (game loop, `draw.rect`/`circle`, tasti) + caricare e mostrare immagini (`image.load`), `Rect` per le collisioni | nuovo file `L24-pygame-immagini.py` |
+| 6–7 | Suoni ed effetti (`mixer`), testo a schermo (`font`), punteggio persistente durante la partita | nuovo file `L25-pygame-suoni-testo.py` |
+| 8–9 | Stati di gioco: menu iniziale, partita, schermata di game over — gestiti con variabili di stato e `if` | nuovo file `L26-pygame-stati-menu.py` |
 | 10 | Esercizi misti + scheda verifica | — |
 
 ### Struttura tipo di una lezione
@@ -67,10 +93,10 @@ Lo studente capisce cos'è una classe, sa definire attributi e metodi, crea e us
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 11–12 | Perché le classi: da codice ripetuto (più dizionari "simili") a una classe — `class`, `__init__`, attributi | nuovo file `L24-oop-perche-classi.py` |
-| 13–14 | Metodi, `self`, modificare lo stato di un oggetto tramite i suoi metodi | nuovo file `L25-oop-metodi-self.py` |
-| 15–16 | Più oggetti della stessa classe in una lista, ciclare su di essi, confronto con liste di dizionari dell'anno scorso | nuovo file `L26-oop-liste-oggetti.py` |
-| 17–18 | Ripasso OOP + piccolo progetto non grafico (es. gestione di una rubrica/inventario con classi) | nuovo file `L27-oop-progetto.py` |
+| 11–12 | Perché le classi: da codice ripetuto (più dizionari "simili") a una classe — `class`, `__init__`, attributi | nuovo file `L27-oop-perche-classi.py` |
+| 13–14 | Metodi, `self`, modificare lo stato di un oggetto tramite i suoi metodi | nuovo file `L28-oop-metodi-self.py` |
+| 15–16 | Più oggetti della stessa classe in una lista, ciclare su di essi, confronto con liste di dizionari dell'anno scorso | nuovo file `L29-oop-liste-oggetti.py` |
+| 17–18 | Ripasso OOP + piccolo progetto non grafico (es. gestione di una rubrica/inventario con classi) | nuovo file `L30-oop-progetto.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — motivazione concettuale con schema alla lavagna (oggetto = scatola con dati + azioni)
@@ -96,9 +122,9 @@ Lo studente sa riscrivere e ampliare un gioco Pygame usando classi per i persona
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 19–20 | Da funzioni a classi: riscrivere un gioco dell'Unità 2 usando una classe `Player` | nuovo file `L28-pygame-classe-player.py` |
-| 21–22 | Più nemici/oggetti come lista di istanze della stessa classe, collisioni tra oggetti tramite metodi | nuovo file `L29-pygame-classi-nemici.py` |
-| 23–24 | `pygame.sprite.Sprite` e `Group` (versione "ufficiale" di Pygame delle classi viste a mano) + esercizi/verifica | nuovo file `L30-pygame-sprite-group.py` |
+| 19–20 | Da funzioni a classi: riscrivere un gioco dell'Unità 2 usando una classe `Player` | nuovo file `L31-pygame-classe-player.py` |
+| 21–22 | Più oggetti della stessa classe come lista di istanze, collisioni tra oggetti tramite metodi | nuovo file `L32-pygame-classi-nemici.py` |
+| 23–24 | `pygame.sprite.Sprite` e `Group` (versione "ufficiale" di Pygame delle classi viste a mano) + esercizi/verifica | nuovo file `L33-pygame-sprite-group.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — confronto esplicito "come lo facevamo prima / come lo facciamo ora con le classi"
@@ -121,9 +147,9 @@ Lo studente sa salvare e ricaricare dati da file (es. punteggi, salvataggi), sa 
 ### Contenuti
 | Settimana | Argomento | File di riferimento |
 |-----------|-----------|---------------------|
-| 25–26 | Lettura e scrittura di file di testo (`open`, `read`, `write`, `with`) — es. salvare un log o un elenco | nuovo file `L31-file-lettura-scrittura.py` |
-| 27 | JSON: salvare e ricaricare strutture dati (liste/dizionari) — es. salvare il punteggio massimo di un gioco | nuovo file `L32-json-salvataggio.py` |
-| 28–29 | Moduli propri: dividere un programma in più file con `import`, perché organizzare il codice in più parti | nuovo file `L33-moduli-import.py` |
+| 25–26 | Lettura e scrittura di file di testo (`open`, `read`, `write`, `with`) — es. salvare un log o un elenco | nuovo file `L34-file-lettura-scrittura.py` |
+| 27 | JSON: salvare e ricaricare strutture dati (liste/dizionari) — es. salvare il punteggio massimo di un gioco | nuovo file `L35-json-salvataggio.py` |
+| 28–29 | Moduli propri: dividere un programma in più file con `import`, perché organizzare il codice in più parti | nuovo file `L36-moduli-import.py` |
 
 ### Struttura tipo di una lezione
 - 20 min — motivazione concreta ("il punteggio si perde quando chiudo il gioco: come lo salviamo?")
@@ -167,12 +193,13 @@ Lo studente porta a termine un progetto originale che integra Pygame, classi e s
 | Unità | Argomento | Settimane | Ore |
 |-------|-----------|-----------|-----|
 | 1 | Ripasso e riattivazione | 1–3 | 6 |
+| 1-bis | Gestione file e filesystem | 3-bis | 6 |
 | 2 | Pygame avanzato | 4–10 | 14 |
 | 3 | OOP (basi) | 11–18 | 16 |
 | 4 | Pygame con le classi | 19–24 | 12 |
 | 5 | File, dati e moduli | 25–29 | 10 |
 | 6 | Progetto finale | 30–33 | 8 |
-| | **Totale** | **33 sett.** | **66h** |
+| | **Totale** | **33 sett.** | **72h** |
 
 ---
 

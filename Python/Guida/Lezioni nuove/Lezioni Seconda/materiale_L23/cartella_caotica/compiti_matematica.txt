@@ -1,0 +1,13 @@
+Esercizi di matematica — capitolo 5
+
+1. Calcola il perimetro di un rettangolo con base 12 cm e altezza 7 cm.
+   Soluzione: P = 2*(12+7) = 38 cm
+
+2. Qual è l'area di un cerchio con raggio 5 cm?
+   Soluzione: A = pi * r^2 = 3.14 * 25 = 78.5 cm²
+
+3. Risolvi l'equazione: 3x + 7 = 22
+   Soluzione: 3x = 15, x = 5
+
+4. Semplifica la frazione 18/24.
+   Soluzione: MCD(18,24) = 6, risultato = 3/4

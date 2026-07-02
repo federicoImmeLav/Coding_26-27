@@ -1,0 +1,7 @@
+Lista della spesa
+- pane
+- latte
+- uova
+- pasta
+- pomodori
+- olio

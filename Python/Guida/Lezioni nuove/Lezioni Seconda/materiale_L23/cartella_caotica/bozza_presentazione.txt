@@ -1,0 +1,26 @@
+PRESENTAZIONE PROGETTO FINALE — bozza
+
+Titolo: Sistema di gestione biblioteca scolastica
+Autore: Marco Rossi, classe 3B
+
+INTRODUZIONE
+Il progetto consiste in un programma Python per gestire
+il prestito dei libri della biblioteca scolastica.
+
+FUNZIONALITÀ PREVISTE
+- Aggiunta di nuovi libri al catalogo
+- Registrazione dei prestiti (chi ha preso quale libro)
+- Restituzione dei libri con aggiornamento automatico
+- Ricerca per titolo, autore o categoria
+- Report mensile dei libri più richiesti
+
+STRUTTURA DEL CODICE
+- Classe Libro: titolo, autore, disponibile (bool)
+- Classe Biblioteca: lista di libri, metodi per cercare/prestare
+- File JSON per salvare lo stato tra una sessione e l'altra
+- Menu testuale principale
+
+TODO
+- Aggiungere la gestione delle date di restituzione
+- Creare la funzione di report
+- Testare con dati reali della biblioteca
